@@ -1,7 +1,7 @@
 # MP_assembly
 the pipeline for paired end influenza segment MP assembly
 
-This snakemake pipeline is a tool for assembly paired-end sequences, preferably illumina sequences. The tool consists of the quality control, trimming adapters, aligning to the given reference genome, and producing the consensus sequences with depth coverage information for post analysis quality control. Feel free to change the references for adapting the pipeline with other segments or studies.
+This snakemake pipeline is a tool for assembly paired-end sequences, preferably illumina sequences. The tool consists of the quality control, trimming adapters, aligning to the given reference genome, and producing the consensus sequences with depth coverage information for post analysis quality control. Feel free to change the references for adapting the pipeline with other segments or studies. Example files are available in the 'data' folder
 
 # Installation
 The pipeline can be installed using the anaconda environment with 'req.txt'.
