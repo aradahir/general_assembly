@@ -1,0 +1,41 @@
+Read1 before filtering:
+total reads: 159041
+total bases: 23011805
+Q20 bases: 22513780(97.8358%)
+Q30 bases: 21654842(94.1032%)
+
+Read2 before filtering:
+total reads: 159041
+total bases: 23018771
+Q20 bases: 22181988(96.3648%)
+Q30 bases: 21055620(91.4715%)
+
+Read1 after filtering:
+total reads: 153577
+total bases: 19465674
+Q20 bases: 19124426(98.2469%)
+Q30 bases: 18428075(94.6696%)
+
+Read2 after filtering:
+total reads: 153577
+total bases: 16396554
+Q20 bases: 15952610(97.2925%)
+Q30 bases: 15202367(92.7168%)
+
+Filtering result:
+reads passed filter: 307154
+reads failed due to low quality: 6216
+reads failed due to too many N: 0
+reads failed due to too short: 4712
+reads with adapter trimmed: 446
+bases trimmed due to adapters: 2997
+
+Duplication rate: 18.7846%
+
+Insert size peak (evaluated by paired-end reads): 171
+
+JSON report: result/trimmed/qc_ASyd5MCol11_S36.json
+HTML report: result/trimmed/qc_ASyd5MCol11_S36.html
+
+fastp -i data/ASyd5MCol11_S36_L001_R1_001.fastq.gz -I data/ASyd5MCol11_S36_L001_R2_001.fastq.gz -f 20 -T 20 --html result/trimmed/qc_ASyd5MCol11_S36.html --json result/trimmed/qc_ASyd5MCol11_S36.json -o result/trimmed/trimmed_ASyd5MCol11_S36_R1.fastq.gz -O result/trimmed/trimmed_ASyd5MCol11_S36_R2.fastq.gz 
+fastp v0.22.0, time used: 2 seconds
