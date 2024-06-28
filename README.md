@@ -6,7 +6,7 @@ This snakemake pipeline is a tool for assembly paired-end sequences, preferably 
 # Installation
 The pipeline can be installed using the anaconda environment with 'req.txt'.
 ```
-  mamba create -n MP_assembly -f req.txt
+  mamba create -n general_assembly -f req.txt
 ```
 # Dependencies
 1. snakemake
@@ -19,7 +19,7 @@ The pipeline can be installed using the anaconda environment with 'req.txt'.
 # Uses
 1. Head to the working directory and wake up the snakemake environment
 ```
-  conda activate MP_assembly
+  conda activate general_assembly
 ```
 2. Open the snakefile inside the directory and change the input_dir and output_dir to point out the working folders. Full-path is required.
 3. Run the pipeline, c is for adjusting the cores.
