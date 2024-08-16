@@ -1,7 +1,9 @@
 # general_assembly
 the pipeline for paired end influenza segment MP assembly
 
-This snakemake pipeline is a tool for assembly paired-end sequences, preferably illumina sequences. The tool consists of the quality control, trimming adapters, aligning to the given reference genome, and producing the consensus sequences with depth coverage information for post analysis quality control. Feel free to change the references for adapting the pipeline with other segments or studies. Example files are available in the 'data' folder
+This snakemake pipeline is a tool for assembly paired-end sequences, preferably illumina sequences. The tool consists of the quality control, trimming adapters, aligning to the given reference genome, and producing the consensus sequences with depth coverage information for post analysis quality control. There are two option for running assembly via ONT and illumina sequences.
+
+Note that: This pipeline is build for demultiplexed ONT data only.
 
 # Installation
 The pipeline can be installed using the anaconda environment with 'req.txt'.
@@ -15,6 +17,7 @@ The pipeline can be installed using the anaconda environment with 'req.txt'.
 4. bwa-mem2
 5. fastp
 6. R::argparse
+7. minimap2 **in develop
    
 # Uses
 1. Head to the working directory and wake up the snakemake environment
@@ -26,6 +29,12 @@ The pipeline can be installed using the anaconda environment with 'req.txt'.
 ```
   snakemake -c 40
 ```
+
+# Setting and config files
+1. Config file
+2. Setting
+  - ONT running
+  - Illumina running
 
 # Results
 The pipeline will create the folder 'result', which consists of 
